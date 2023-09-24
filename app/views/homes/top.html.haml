@@ -1,0 +1,9 @@
+%h1 TTTへようこそ！
+- @videos.each do |video|
+  - snippet = video['snippet']
+  .card
+    .thumbnails
+      = image_tag snippet['thumbnails']['high']['url']
+    %h3.title= snippet['title']
+    %p.description= snippet['description']
+

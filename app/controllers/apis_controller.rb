@@ -1,10 +1,10 @@
-class HomesController < ApplicationController
+class ApisController < ApplicationController
   require 'uri'
   require 'net/http'
   require 'json'
   require 'httpclient'
-  def top
 
+  def show
 
     default_query = "Scratch　"
     input = "にゃんこ"
