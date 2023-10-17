@@ -1,0 +1,14 @@
+<% @videos.each do |video| %>
+  <% snippet = video['snippet'] %>
+  <div class="card">
+    <div class="thumbnails">
+      <%= image_tag snippet['thumbnails']['high']['url'] %>
+    </div>
+    <h3 class="title">
+      <%= snippet['title'] %>
+    </h3>
+    <p class="description">
+      <%= snippet['description'] %>
+    </p>
+  </div>
+<% end %>

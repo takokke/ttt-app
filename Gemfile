@@ -33,7 +33,6 @@ gem 'bootsnap', '>= 1.4.2', require: false
 
 gem 'better_errors'
 gem 'binding_of_caller'
-gem 'hamlit'
 gem 'rack-cors'
 gem 'httpclient' #api繋ぎこれで直った
 
@@ -51,7 +50,6 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
-  gem 'erb2haml'
 end
 
 group :test do
