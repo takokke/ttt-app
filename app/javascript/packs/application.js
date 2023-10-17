@@ -9,10 +9,10 @@ require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
 
-// import "jquery";
-// import "popper.js";
-// import "bootstrap";
-// import "../stylesheets/application"; 
+import "jquery";
+import "popper.js";
+import "bootstrap";
+// import "../stylesheets/application"
 
 
 
