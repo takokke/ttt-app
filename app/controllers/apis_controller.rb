@@ -6,11 +6,10 @@ class ApisController < ApplicationController
 
   def show
 
-    default_query = "Scratch　"
-    input = "にゃんこ"
+    default_query = "Viscuit 作り方 "
+    input = "野球"
     query = default_query + input
-    api_key = 'AIzaSyCjkpfk6EW2gwDNtE7CXK-3uzhAOQmKc2k'
-
+    api_key = ENV['Y_API_KEY']
 
     # エンコードしたいデータをハッシュとして用意する
     data = {

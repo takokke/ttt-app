@@ -6,8 +6,8 @@ class HomesController < ApplicationController
   def top
 
 
-    default_query = "Scratch　"
-    input = "にゃんこ"
+    default_query = "viscuit プログラミング"
+    input = "マイクラ"
     query = default_query + input
     api_key = 'AIzaSyCjkpfk6EW2gwDNtE7CXK-3uzhAOQmKc2k'
 
