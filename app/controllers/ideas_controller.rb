@@ -1,15 +1,10 @@
-class ApisController < ApplicationController
-  require 'uri'
-  require 'net/http'
-  require 'json'
-  require 'httpclient'
-
-  def show
-
-    default_query = "Viscuit 作り方 "
-    input = "野球"
+class IdeasController < ApplicationController
+  def index
+    default_query = "viscuit プログラミング"
+    input = ""
     query = default_query + input
     api_key = ENV['Y_API_KEY']
+
 
     # エンコードしたいデータをハッシュとして用意する
     data = {
@@ -33,6 +28,12 @@ class ApisController < ApplicationController
     res = client.get(url) #レスポンシブを受け取る
     res = JSON.parse(res.body)    #レスポンシブをJSON形式にする
     @videos = res['items']
+  end
+
+  def show
 
   end
+
+
+
 end

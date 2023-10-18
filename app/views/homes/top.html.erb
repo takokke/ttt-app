@@ -1,17 +1,2 @@
-<h1 class="bg-primary">idea</h1>
-<% @videos.each do |video| %>
-  <% snippet = video['snippet'] %>
-  <div class="card">
-    <%= link_to 'video', "https://www.youtube.com/watch?v=#{video['id']['videoId']}", target: :_blank, rel: "noopener noreferrer" %>
-    <div class="thumbnails">
-      <%= image_tag snippet['thumbnails']['high']['url'] %>
-    </div>
-    <h3 class="title">
-      <%= snippet['title'] %>
-    </h3>
-    <p class="description">
-      <%= snippet['description'] %>
-    </p>
-  </div>
-<% end %>
-
+<h1>TOPページ</h1>
+<%= link_to '動画一覧', ideas_path %>
